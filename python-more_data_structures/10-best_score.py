@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    biggest_key = []
-    for i in biggest_key:
-        if i >= a_dictionary.items():
-            return biggest_key
+    if a_dictionary:
+        temp = a_dictionary.items()
+        sort = (sorted(temp, key=lambda item: item[1], reverse=True))
+        return sort[0][0]
