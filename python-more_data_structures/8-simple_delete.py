@@ -3,6 +3,6 @@ def simple_delete(a_dictionary, key=""):
     new_set = []
     for i in a_dictionary:
         if i == key:
-            del i
+            del a_dictionary[key]
         else:
             return a_dictionary
