@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Square generation module for Python project 0x06
-"""
+""" Module Sqaure """
 
 
 class Square:
@@ -18,6 +17,7 @@ class Square:
             None
         """
         self.__size = size
+
     def area(self):
         """
         set square square area
@@ -26,6 +26,7 @@ class Square:
             the current square area (int)
         """
         return self.__size ** 2
+
     @property
     def size(self):
         """
@@ -35,6 +36,7 @@ class Square:
             Size of square
         """
         return self.__size
+
     @size.setter
     def size(self, value):
         """
@@ -51,6 +53,6 @@ class Square:
         if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
-            raise ValueError("size must be >= 0")
+                raise ValueError("size must be >= 0")
         else:
             self.__size = value
