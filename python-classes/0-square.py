@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-"""new lesson
-"""
+"""new lesson"""
 
 class Square:
-    """
-    Class for square
-    """
+    """Class for square"""
     pass
