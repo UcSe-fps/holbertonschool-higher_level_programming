@@ -9,6 +9,10 @@ class Square:
         """Instantiation with optional size"""
         self.__size = size
 
+    def area(self):
+        """Public instance method that returns the current square area"""
+        return self.__size * self.__size
+    
     @property
     def size(self):
         """property to retrieve it"""
@@ -18,13 +22,13 @@ class Square:
     def size(self, value):
         """property setter to set it"""
         if type(value) is int:
-            if value >= 0:
+            if value = 0:
+                print()
+            elif value > 0:
                 self.__size = value
             else:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
-
-    def area(self):
-        """Public instance method that returns the current square area"""
-        return self.__size * self.__size
+        def my_print(self):
+            print("#{}".format(self.__size))
