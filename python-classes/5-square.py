@@ -5,21 +5,21 @@
 class Square:
 """class Square that defines a square"""
     
-    def __init__(self, size):
+    def __init__(self, size=0):
         """Instantiation with optional size"""
         self.__size = size
 
     @property
     def size(self):
         """property setter to set it"""
-        self.__size
+        return self.__size
     
     @size.setter
     def size(self, value):
         """property setter to set it"""
-        if value is int:
+        if type(value) is int:
             if value >= 0:
-                value = self.__size
+                self.__size = value
             else:
                 raise ValueError("size must be >= 0")
         else:
