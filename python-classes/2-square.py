@@ -1,6 +1,20 @@
 #!/usr/bin/python3
 class Square:
+    """ Square class defined by geometric shap
+
+        Attributes:
+            size (int): Size of square
+    """
     def __init__(self, size=0):
+        """
+        Initialize method
+
+        Args:
+            size (int): int to assign to square size
+        Raises:
+            TypeError: if size is not int
+            ValueError: size less than 0
+        """
         if type(size) != int:
             raise TypeError("size must be integer")
         elif size < 0:
