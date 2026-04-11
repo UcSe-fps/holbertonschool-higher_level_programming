@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""This is a trial
-"""
+"""Return True if the object is exactly an instance"""
 
 def is_same_class(obj, a_class):
    """this is another True one"""
