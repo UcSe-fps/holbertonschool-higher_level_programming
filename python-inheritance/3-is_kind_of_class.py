@@ -1,12 +1,9 @@
 #!/usr/bin/python3
+""""returns True if the object or false"""
 
-"""This is a python task"""
 
 def is_kind_of_class(obj, a_class):
-    
-
-    """true or false"""
-
+    """Function to check if return true or false"""
 
     if isinstance(obj, a_class):
         return True
