@@ -5,7 +5,7 @@
 def inherits_from(obj, a_class):
     """Function that inherits"""
 
-    if isinstance(obj, a_class):
-        return True
-    else:
+    if type(obj) is a_class or not isinstance(obj, a_class):
         return False
+    else:
+        return isinstance(obj, a_class)
