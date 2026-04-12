@@ -1,20 +1,18 @@
 #!/usr/bin/python3
+"""
+function to create basegeometry
+"""
+
+
 class BaseGeometry:
-    """tihohv"""
-
-
+    """Empty class"""
 
     def area(self):
-    """hfbvidbcin"""
+        """Function not implemented"""
         raise Exception("area() is not implemented")
 
-
-"""third definition"""
-
     def integer_validator(self, name, value):
-        """last part"""
-
         if type(value) is not int:
-            raise TypeError("<name> must be an integer")
-        elif value <= 0:
-            raise ValueError("<name> must be greater than 0")
+            raise TypeError("{} must be an integer".format(name))
+        if value <= 0:
+            raise ValueError("{} must be greater than 0".format(name))
