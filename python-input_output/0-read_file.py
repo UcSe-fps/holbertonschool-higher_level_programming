@@ -7,4 +7,4 @@ def read_file(filename=""):
     """Yamyamaymaym"""
 
     with open(filename, mode='r', encoding='utf-8') as f:
-            print(f.read(), end='')
+        print(f.read(), end='')
