@@ -6,5 +6,5 @@ import json
 def load_from_json_file(filename):
     """hnhnhnhnhnhn"""
 
-    with open(filename, mode='r', encoding='utc-8') as f:
+    with open(filename, mode='r', encoding='utf-8') as f:
         return json.loads(f)
