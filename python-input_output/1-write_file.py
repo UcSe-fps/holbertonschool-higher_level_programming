@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-
-
 """This is something idk"""
+
 
 def write_file(filename="", text=""):
 
