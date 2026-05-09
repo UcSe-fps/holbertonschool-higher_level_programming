@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-
-#this is a string
-
 def read_file(filename=""):
-    with open('filename', encoding="utf-8") as read_file:
-        for line in read-file:
+    with open('filename', encoding="utf-8") as a_file:
+        for line in a_file:
             print(line, end='')
