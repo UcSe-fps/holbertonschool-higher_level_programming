@@ -14,5 +14,3 @@ class Student:
 
         """ururururur"""
         return self.__dict__
-
-
