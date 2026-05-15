@@ -1,2 +1,3 @@
-#!/usr/bin/python3
-mysql -u root -p -e "SHOW DATABASES;"
+-- list databases
+--of my SQL server
+SHOW DATABASES;
