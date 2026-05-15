@@ -6,7 +6,12 @@ import pickle
 
 
 class CustomObject:
-    def __init__(self, name: str, age: int, is_student: bool):
+    """
+    A custom class representing a person with name, age, and student status.
+    """
+
+
+    def __init__(self, name, age, is_student):
         """
         Initializes the CustomObject with name, age, and student status.
         """
@@ -18,9 +23,9 @@ class CustomObject:
             """
         Prints the object's attributes in a formatted manner.
         """
-        print(f"Name: {self.name}")
-        print(f"Age: {self.age}")
-        print(f"Is Student: {self.is_student}")
+        print("Name: {}". format(self.name))
+        print("Age: {}". format(self.age))
+        print("Is Student: {}". format(self.is_student))
 
         def serialize(self, filename):
             """
