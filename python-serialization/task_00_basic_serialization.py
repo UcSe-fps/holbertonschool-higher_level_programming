@@ -4,16 +4,28 @@ import json
 
 
 def serialize_and_save_to_file(data, filename):
-    """this is another"""
+    """
+    
+    this is another
+
+
+
+    """
 
     with open(filename, 'w', encoding='utf-8') as f:
         return json.dump(data, f)
 
-"""this is another one"""
-
 
 def load_and_deserialize(filename):
-    """this is too"""
+    """
+
+    this is too
+
+
+    """
+
+
+
 
     with open(filename, 'w', encoding='utf-8') as f:
         return json.load(f)
