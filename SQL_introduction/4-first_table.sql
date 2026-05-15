@@ -1,5 +1,5 @@
 -- Creates the table
 CREATE TABLE IF NOT EXISTS first_table (
-id INT,
-name VARCHAR(256)
-0);
+	id INT,
+	name VARCHAR(256)
+);
