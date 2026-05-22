@@ -1,16 +1,27 @@
 #!/usr/bin/python3
-import requests
-import sys
 
-q = sys.argv[1] if len(sys.argv) > 1 else ""
+"""
+Python script that takes in a letter and sends a
+POST request to http://0.0.0.0:5000/search_user
+with the letter as a parameter.
+"""
 
-r = requests.post("http://0.0.0.0:5000/search_user", data={"q": q})
-
-try:
-    data = r.json()
-    if data:
-        print("[{}] {}".format(data["id"], data["name"]))
-    else:
+if __name__ == '__main__':
+    import requests
+    import sys
+    url = "http://0.0.0.0:5000/search_user"
+    try:
+        ar = sys.argv[1]
+    except Exception:
+        ar = ""
+    q = {"q": ar}
+    r = requests.post(url, data=q)
+    try:
+        result = r.json()
+    except Exception:
+        print("Not a valid JSON")
+        exit()
+    try:
+        print("[{}] {}".format(result['id'], result['name']))
+    except Exception:
         print("No result")
-except ValueError:
-    print("Not a valid JSON")
