@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """importing"""
 import urllib.request
-"""now comes the main part"""
 
 
-with urllib.request.urlopen(https://intranet.hbtn.io/status) as f:
+with urllib.request.urlopen("https://intranet.hbtn.io/status") as f:
     html = f.read()
     """now printings"""
     
