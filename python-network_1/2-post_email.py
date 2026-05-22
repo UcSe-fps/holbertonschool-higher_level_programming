@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""lets see"""
 import sys
 import urllib.request
 import urllib.parse
+"""somewhot"""
 
 
 if __name__ == '__main__':
@@ -13,4 +13,4 @@ if __name__ == '__main__':
     request = urllib.request.Request(url, data)
 
     with urllib.request.urlopen(request) as response:
-        print("{}".format(response.read().decode('utf-8)))
+        print("{}".format(response.read().decode('utf-8')))
