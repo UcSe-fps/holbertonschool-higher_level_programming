@@ -13,7 +13,7 @@ def fetch_and_print_posts():
     sc = requ.status_code
     r_json = requ.json()
 
-    print(f"Status code: {sc}")
+    print(f"Status Code: {sc}")
 
     for i in r_json:
         print(i['title'])
