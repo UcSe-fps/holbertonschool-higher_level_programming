@@ -36,4 +36,4 @@ def fetch_and_save_posts():
                 row= {}
                 for field in header:
                     row[field] = post[field]
-                     writer.writerow(row)
+                writer.writerow(row)
