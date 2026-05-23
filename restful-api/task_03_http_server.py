@@ -26,7 +26,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             self.wfile.write("OK".encode("utf-8"))
         else:
             self.send_response(404)
-            self.send_headers("Content-type", "application/json")
+            self.send_header("Content-type", "application/json")
             self.end_headers()
             self.wfile.write("Endpoint not found".encode("utf-8"))
 
