@@ -17,6 +17,8 @@ def fetch_and_print_posts():
 
     for i in r_json:
         print(i['title'])
+
+
 def fetch_and_save_posts():
     """another one"""
 
@@ -34,4 +36,4 @@ def fetch_and_save_posts():
                 row= {}
                 for field in header:
                     row[field] = post[field]
-                writer.writerow(row)
+                     writer.writerow(row)
